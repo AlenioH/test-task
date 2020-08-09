@@ -42,7 +42,9 @@ TITLE
       width: 100%;
     }
 
-    .mitarbeiter {
+    .mitarbeiter,
+    .aboutUs,
+    .contact {
       margin-top: 4rem;
       border-top: 7px solid black;
       border-bottom: 7px solid black;
@@ -50,6 +52,45 @@ TITLE
 
     .mitarbeiter p {
       font-size: 1.5rem;
+    }
+
+    .benefits img {
+      width: 100px;
+    }
+
+    .aboutUs {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+    .aboutUs img {
+      width: 300px;
+      transform: scaleX(-1);
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .contact > img {
+      border-radius: 100%;
+      width: 300px;
+    }
+    /* .contactDetails {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-items: space-around;
+    } */
+    .contactDetails ul {
+      list-style-type: none;
+    }
+    .contactDetails img {
+      width: 15px;
     }
   </style>
   <body>
@@ -85,7 +126,7 @@ TITLE
               mean?
             </li>
             <li>
-              Ein umgängliches Wesen, das sich liebend gern um jemanden kümmer
+              Ein umgängliches Wesen, das sich liebend gern um jemanden kümmert
             </li>
             <li>
               Du solltest ganz viel aushalten und Schmerzen ertragen können.
@@ -111,8 +152,55 @@ TITLE
             </li>
           </ul>
         </div>
-        <div>
+        <div class="benefits">
           <h2>Benefits</h2>
+          <img
+            src="Benefits/Aus-und-Weiterbildung.svg"
+            alt="akademischer Hut"
+          />
+          <img src="Benefits/Flexible-Arbeitszeiten.svg" alt="Uhr" />
+          <img src="Benefits/Gesundheit-und-Fitness.svg" alt="Herz" />
+          <img src="Benefits/Jubilee_Awards.svg" alt="Medaille" />
+          <img src="Benefits/Kantine.svg" alt="Besteck" />
+          <img src="Benefits/Mitarbeiterevents.svg" alt="Konfetti" />
+          <img src="Benefits/Mitarbeitervorteile.svg" alt="Prozent Zeichen" />
+          <img
+            src="Benefits/Obstkorb-Erfrischung.svg"
+            alt="Apfel und Wasserflasche"
+          />
+          <img src="Benefits/Praemiensystem.svg" alr="Hand hält Münzen" />
+          <img
+            src="Benefits/Umfassende-Einarbeitung.svg"
+            alt="Heft und Stift"
+          />
+        </div>
+      </section>
+      <section class="aboutUs">
+        <div>
+          <h1>Über uns</h1>
+          <p>
+            Wir sind ein Team von mehreren Katzen die sich an Schnuckeligkeit
+            übertreffen. Eat. Sleep. Play. Repeat. ist unser Motto. Es gibt kein
+            Abenteuer, das wir scheuen. Wir sind einfach einmalig und zuckersüß
+            - zumindest die meiste Zeit.
+          </p>
+          <button>Jetzt bewerben!</button>
+          <p>Wir freuen uns auf dich!</p>
+        </div>
+        <img src="Team.JPG" alt="zwei kuschelnde Kätzchen" />
+      </section>
+      <section class="contact">
+        <img src="Lois_Kater.jpg" alt="Hübsches Kätzchen" />
+        <div class="contactDetails">
+          <h1>Dein Kontakt</h1>
+
+          <p>
+            Lois Kater
+          </p>
+          <p><img src="Mail.svg" alt="Brief Icon" /> lois.kater@katze.at</p>
+          <p><img src="Phone.svg" alt="Telefon Icon" />06767/11111111</p>
+          <p><img src="Address.svg" alt="Haus" />In der Katzengasse 1</p>
+          <p>4020 Linz</p>
         </div>
       </section>
     </div>
