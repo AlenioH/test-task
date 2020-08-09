@@ -1,400 +1,399 @@
 <!DOCTYPE html>
-<html></html>
-<head>
-  <!--HERE IMPORT THE FONTS
-  META TAGS
-TITLE
-<style> is also in head-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-    rel="stylesheet"
-  />
-  <title>Mitarbeiter mit Leidenschaft gesucht</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      color: #000000;
-    }
-    body {
-      width: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      font-family: 'Oswald', sans-serif;
-      background-color: #dddddd;
-    }
-    .container {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    .container > * {
-      background-color: white;
-    }
-
-    .container > *:not(.headerDesktop) {
-      padding-left: 3rem;
-      font-size: 1.5rem;
-    }
-
-    .mitarbeiter,
-    .jobDescription,
-    .contact {
-      padding-top: 1.5rem;
-      padding-bottom: 2rem;
-    }
-    h1,
-    h2 {
-      font-family: 'Abril Fatface';
-    }
-
-    .headerDesktop {
-      border-right: 7px solid black;
-      border-left: 7px solid black;
-      width: 100%;
-    }
-
-    .mitarbeiter,
-    .contact {
-      margin-top: 4rem;
-      border-top: 7px solid black;
-      border-bottom: 7px solid black;
-    }
-    .jobDescription,
-    .aboutUs {
-      margin-top: 4rem;
-      border-left: 7px solid black;
-      border-right: 7px solid black;
-    }
-
-    .mitarbeiter p {
-      font-size: 2rem;
-    }
-    .mitarbeiter h1 {
-      font-size: 50px;
-    }
-
-    .benefits img {
-      width: 100px;
-    }
-
-    .aboutUs {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-    }
-    .aboutUs div {
-      padding-bottom: 1.5rem;
-    }
-    .aboutUs img {
-      width: 300px;
-      transform: scaleX(-1);
-      padding-top: 0;
-
-      margin-top: 0;
-      height: 100%;
-      margin-left: auto;
-    }
-
-    button {
-      background-color: #808a00;
-      border-radius: 10px;
-      padding: 10px;
-      width: 200px;
-      color: #ffffff;
-      font-size: 1.5rem;
-      font-family: inherit;
-      height: 70px;
-    }
-
-    button:hover {
-      border: 3px solid #808a00;
-      background-color: transparent;
-      color: #808a00;
-      transition: all 0.3s;
-    }
-    .contact {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
-      height: auto;
-    }
-
-    .contact > img {
-      border-radius: 100%;
-      width: 300px;
-      vertical-align: middle;
-    }
-
-    .contactDetails p {
-      margin: 0 auto;
-      text-align: center;
-    }
-    .contactDetails img {
-      width: 15px;
-    }
-    .email {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* --------------------------MOBILE VERSION---------------------------*/
-    @media (max-width: 900px) {
-      .headerDesktop {
-        display: none;
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mitarbeiter mit Leidenschaft gesucht</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        color: #000000;
       }
-      .headerMobile {
+      body {
         width: 100%;
-      }
-      .benefitsDesktop {
-        display: none;
-      }
-      .benefitsMobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        text-align: center;
-      }
-      .aboutUs {
+        margin: 0;
         display: flex;
-        flex-direction: column-reverse;
-        padding-right: 1rem;
+        flex-direction: column;
+        font-family: 'Oswald', sans-serif;
+        background-color: #dddddd;
       }
-      .jobDescription {
-        padding-right: 1rem;
-      }
-      .aboutUs img {
+      .container {
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 1rem;
-        padding-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      .container > * {
+        background-color: white;
       }
 
+      .container > *:not(.headerDesktop) {
+        padding-left: 3rem;
+        font-size: 1.5rem;
+      }
+
+      .mitarbeiter,
+      .jobDescription,
+      .contact {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+      }
+      h1,
+      h2 {
+        font-family: 'Abril Fatface';
+      }
+
+      .headerDesktop {
+        border-right: 7px solid black;
+        border-left: 7px solid black;
+        width: 100%;
+      }
+
+      .mitarbeiter,
+      .contact {
+        margin-top: 4rem;
+        border-top: 7px solid black;
+        border-bottom: 7px solid black;
+      }
+      .jobDescription,
+      .aboutUs {
+        margin-top: 4rem;
+        border-left: 7px solid black;
+        border-right: 7px solid black;
+      }
+
+      .mitarbeiter p {
+        font-size: 2rem;
+      }
+      .mitarbeiter h1 {
+        font-size: 50px;
+      }
+
+      .benefits img {
+        width: 100px;
+      }
+
+      .aboutUs {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+      }
+      .aboutUs div {
+        padding-bottom: 1.5rem;
+      }
+      .aboutUs img {
+        width: 300px;
+        transform: scaleX(-1);
+        padding-top: 0;
+
+        margin-top: 0;
+        height: 100%;
+        margin-left: auto;
+      }
+
+      button {
+        background-color: #808a00;
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-family: inherit;
+        height: 70px;
+      }
+
+      button:hover {
+        border: 3px solid #808a00;
+        background-color: transparent;
+        color: #808a00;
+        transition: all 0.3s;
+      }
       .contact {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
       }
-    }
 
-    @media (min-width: 901px) {
-      .headerMobile {
-        display: none;
+      .contact > img {
+        border-radius: 100%;
+        width: 300px;
+        vertical-align: middle;
       }
-      .benefitsMobile {
-        display: none;
-      }
-    }
-  </style>
-  <body>
-    <div class="container">
-      <img src="Header.jpg" class="headerDesktop" />
-      <img src="Header_mobile.jpg" class="headerMobile" />
-      <div class="mitarbeiter">
-        <h1>Mitarbeiter mit Leidenschaft</h1>
-        <p>und einem Herz für Tiere, ganz besonders für Katzen</p>
-      </div>
 
-      <section class="jobDescription">
-        <div class="list">
-          <h2>Was sind deine Aufgaben?</h2>
-          <ul>
-            <li>
-              Immer schön brav füttern, sonst gibts Probleme!
-            </li>
-            <li>
-              Ja nicht erschrecken!
-            </li>
-            <li>Ganz viel Liebe geben!</li>
-            <li>
-              Streicheleinheiten! Was gibt es den Schöneres als eine ausgiebige
-              Massage?
-            </li>
-          </ul>
+      .contactDetails p {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .contactDetails img {
+        width: 15px;
+      }
+      .email {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* --------------------------MOBILE VERSION---------------------------*/
+      @media (max-width: 900px) {
+        .headerDesktop {
+          display: none;
+        }
+        .headerMobile {
+          width: 100%;
+        }
+        .benefitsDesktop {
+          display: none;
+        }
+        .benefitsMobile {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          text-align: center;
+        }
+        .aboutUs {
+          display: flex;
+          flex-direction: column-reverse;
+          padding-right: 1rem;
+        }
+        .jobDescription {
+          padding-right: 1rem;
+        }
+        .aboutUs img {
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 1rem;
+          padding-left: 0;
+        }
+
+        .contact {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+
+      @media (min-width: 901px) {
+        .headerMobile {
+          display: none;
+        }
+        .benefitsMobile {
+          display: none;
+        }
+      }
+    </style>
+    <body>
+      <div class="container">
+        <img src="Header.jpg" class="headerDesktop" />
+        <img src="Header_mobile.jpg" class="headerMobile" />
+        <div class="mitarbeiter">
+          <h1>Mitarbeiter mit Leidenschaft</h1>
+          <p>und einem Herz für Tiere, ganz besonders für Katzen</p>
         </div>
-        <div class="list">
-          <h2>Was erwarten wir von dir?</h2>
-          <ul>
-            <li>
-              Einen guten Umgang mit allen Kollegen. Teamspirit! You know what I
-              mean?
-            </li>
-            <li>
-              Ein umgängliches Wesen, das sich liebend gern um jemanden kümmert
-            </li>
-            <li>
-              Du solltest ganz viel aushalten und Schmerzen ertragen können.
-              Grrrr
-            </li>
-            <li>
-              Nicht schimpfen, wenn etwas mal schief geht oder es mal nicht so
-              läuft wie es soll
-            </li>
-          </ul>
-        </div>
-        <div class="list">
-          <h2>Wir bieten dir</h2>
-          <ul>
-            <li>
-              Eine treue Truppe, die dich immer bei Laune hält
-            </li>
-            <li>
-              Freundschaften fürs Leben und ganz viel Freude
-            </li>
-            <li>
-              Ein kollektivvertragliches Gehalt von 1000 Mäusen pro Monat
-            </li>
-          </ul>
-        </div>
-        <div class="benefits">
-          <h2>Benefits</h2>
-          <div class="benefitsDesktop">
-            <img
-              src="Benefits/Aus-und-Weiterbildung.svg"
-              title="Aus- und Weiterbildung"
-              alt="akademischer Hut"
-            />
-            <img
-              src="Benefits/Flexible-Arbeitszeiten.svg"
-              title="Flexible Arbeitszeiten"
-              alt="Uhr"
-            />
-            <img
-              src="Benefits/Gesundheit-und-Fitness.svg"
-              title="Gesundheit und Fitness"
-              alt="Herz"
-            />
-            <img
-              src="Benefits/Jubilee_Awards.svg"
-              title="Jubilee Awards"
-              alt="Medaille"
-            />
-            <img src="Benefits/Kantine.svg" title="Kantine" alt="Besteck" />
-            <img
-              src="Benefits/Mitarbeiterevents.svg"
-              title="Mitarbeiterevents"
-              alt="Konfetti"
-            />
-            <img
-              src="Benefits/Mitarbeitervorteile.svg"
-              title="Mitarbeitervorteile"
-              alt="Prozent Zeichen"
-            />
-            <img
-              src="Benefits/Obstkorb-Erfrischung.svg"
-              title="Obstkorb-Erfrischung"
-              alt="Apfel und Wasserflasche"
-            />
-            <img
-              src="Benefits/Praemiensystem.svg"
-              title="Prämiensystem"
-              alr="Hand hält Münzen"
-            />
-            <img
-              src="Benefits/Umfassende-Einarbeitung.svg"
-              title="Umfassende Einarbeitung"
-              alt="Heft und Stift"
-            />
+
+        <section class="jobDescription">
+          <div class="list">
+            <h2>Was sind deine Aufgaben?</h2>
+            <ul>
+              <li>
+                Immer schön brav füttern, sonst gibts Probleme!
+              </li>
+              <li>
+                Ja nicht erschrecken!
+              </li>
+              <li>Ganz viel Liebe geben!</li>
+              <li>
+                Streicheleinheiten! Was gibt es den Schöneres als eine
+                ausgiebige Massage?
+              </li>
+            </ul>
           </div>
-          <div class="benefitsMobile">
-            <div class="singleBenefitMob">
+          <div class="list">
+            <h2>Was erwarten wir von dir?</h2>
+            <ul>
+              <li>
+                Einen guten Umgang mit allen Kollegen. Teamspirit! You know what
+                I mean?
+              </li>
+              <li>
+                Ein umgängliches Wesen, das sich liebend gern um jemanden
+                kümmert
+              </li>
+              <li>
+                Du solltest ganz viel aushalten und Schmerzen ertragen können.
+                Grrrr
+              </li>
+              <li>
+                Nicht schimpfen, wenn etwas mal schief geht oder es mal nicht so
+                läuft wie es soll
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>Wir bieten dir</h2>
+            <ul>
+              <li>
+                Eine treue Truppe, die dich immer bei Laune hält
+              </li>
+              <li>
+                Freundschaften fürs Leben und ganz viel Freude
+              </li>
+              <li>
+                Ein kollektivvertragliches Gehalt von 1000 Mäusen pro Monat
+              </li>
+            </ul>
+          </div>
+          <div class="benefits">
+            <h2>Benefits</h2>
+            <div class="benefitsDesktop">
               <img
                 src="Benefits/Aus-und-Weiterbildung.svg"
+                title="Aus- und Weiterbildung"
                 alt="akademischer Hut"
               />
-              <p>Aus- und Weiterbildung</p>
-            </div>
-            <div>
-              <img src="Benefits/Flexible-Arbeitszeiten.svg" alt="Uhr" />
-              <p>Flexible Arbeitszeiten</p>
-            </div>
-            <div>
-              <img src="Benefits/Gesundheit-und-Fitness.svg" alt="Herz" />
-              <p>Gesundheit und Fitness</p>
-            </div>
-            <div>
-              <img src="Benefits/Jubilee_Awards.svg" alt="Medaille" />
-              <p>Jubilee Awards</p>
-            </div>
-            <div>
-              <img src="Benefits/Kantine.svg" alt="Besteck" />
-              <p>Kantine</p>
-            </div>
-            <div>
-              <img src="Benefits/Mitarbeiterevents.svg" alt="Konfetti" />
-              <p>Mitarbeiterevents</p>
-            </div>
-            <div>
+              <img
+                src="Benefits/Flexible-Arbeitszeiten.svg"
+                title="Flexible Arbeitszeiten"
+                alt="Uhr"
+              />
+              <img
+                src="Benefits/Gesundheit-und-Fitness.svg"
+                title="Gesundheit und Fitness"
+                alt="Herz"
+              />
+              <img
+                src="Benefits/Jubilee_Awards.svg"
+                title="Jubilee Awards"
+                alt="Medaille"
+              />
+              <img src="Benefits/Kantine.svg" title="Kantine" alt="Besteck" />
+              <img
+                src="Benefits/Mitarbeiterevents.svg"
+                title="Mitarbeiterevents"
+                alt="Konfetti"
+              />
               <img
                 src="Benefits/Mitarbeitervorteile.svg"
+                title="Mitarbeitervorteile"
                 alt="Prozent Zeichen"
               />
-              <p>Mitarbeitervorteile</p>
-            </div>
-            <div>
               <img
                 src="Benefits/Obstkorb-Erfrischung.svg"
+                title="Obstkorb-Erfrischung"
                 alt="Apfel und Wasserflasche"
               />
-              <p>Obstkorb und Erfrischungen</p>
-            </div>
-            <div>
-              <img src="Benefits/Praemiensystem.svg" alr="Hand hält Münzen" />
-              <p>Prämiensystem</p>
-            </div>
-            <div>
+              <img
+                src="Benefits/Praemiensystem.svg"
+                title="Prämiensystem"
+                alr="Hand hält Münzen"
+              />
               <img
                 src="Benefits/Umfassende-Einarbeitung.svg"
+                title="Umfassende Einarbeitung"
                 alt="Heft und Stift"
               />
-              <p>Umfassende Einarbeitung</p>
+            </div>
+            <div class="benefitsMobile">
+              <div class="singleBenefitMob">
+                <img
+                  src="Benefits/Aus-und-Weiterbildung.svg"
+                  alt="akademischer Hut"
+                />
+                <p>Aus- und Weiterbildung</p>
+              </div>
+              <div>
+                <img src="Benefits/Flexible-Arbeitszeiten.svg" alt="Uhr" />
+                <p>Flexible Arbeitszeiten</p>
+              </div>
+              <div>
+                <img src="Benefits/Gesundheit-und-Fitness.svg" alt="Herz" />
+                <p>Gesundheit und Fitness</p>
+              </div>
+              <div>
+                <img src="Benefits/Jubilee_Awards.svg" alt="Medaille" />
+                <p>Jubilee Awards</p>
+              </div>
+              <div>
+                <img src="Benefits/Kantine.svg" alt="Besteck" />
+                <p>Kantine</p>
+              </div>
+              <div>
+                <img src="Benefits/Mitarbeiterevents.svg" alt="Konfetti" />
+                <p>Mitarbeiterevents</p>
+              </div>
+              <div>
+                <img
+                  src="Benefits/Mitarbeitervorteile.svg"
+                  alt="Prozent Zeichen"
+                />
+                <p>Mitarbeitervorteile</p>
+              </div>
+              <div>
+                <img
+                  src="Benefits/Obstkorb-Erfrischung.svg"
+                  alt="Apfel und Wasserflasche"
+                />
+                <p>Obstkorb und Erfrischungen</p>
+              </div>
+              <div>
+                <img src="Benefits/Praemiensystem.svg" alr="Hand hält Münzen" />
+                <p>Prämiensystem</p>
+              </div>
+              <div>
+                <img
+                  src="Benefits/Umfassende-Einarbeitung.svg"
+                  alt="Heft und Stift"
+                />
+                <p>Umfassende Einarbeitung</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="aboutUs">
-        <div>
-          <h1>Über uns</h1>
-          <p>
-            Wir sind ein Team von mehreren Katzen die sich an Schnuckeligkeit
-            übertreffen. Eat. Sleep. Play. Repeat. ist unser Motto. Es gibt kein
-            Abenteuer, das wir scheuen. Wir sind einfach einmalig und zuckersüß
-            - zumindest die meiste Zeit.
-          </p>
-          <button>Jetzt bewerben!</button>
-          <p>Wir freuen uns auf dich!</p>
-        </div>
-        <img src="Team.JPG" alt="zwei kuschelnde Kätzchen" />
-      </section>
-      <section class="contact">
-        <img src="Lois_Kater.jpg" alt="Hübsches Kätzchen" />
-        <div class="contactDetails">
-          <h1>Dein Kontakt</h1>
+        </section>
+        <section class="aboutUs">
+          <div>
+            <h1>Über uns</h1>
+            <p>
+              Wir sind ein Team von mehreren Katzen die sich an Schnuckeligkeit
+              übertreffen. Eat. Sleep. Play. Repeat. ist unser Motto. Es gibt
+              kein Abenteuer, das wir scheuen. Wir sind einfach einmalig und
+              zuckersüß - zumindest die meiste Zeit.
+            </p>
+            <button>Jetzt bewerben!</button>
+            <p>Wir freuen uns auf dich!</p>
+          </div>
+          <img src="Team.JPG" alt="zwei kuschelnde Kätzchen" />
+        </section>
+        <section class="contact">
+          <img src="Lois_Kater.jpg" alt="Hübsches Kätzchen" />
+          <div class="contactDetails">
+            <h1>Dein Kontakt</h1>
 
-          <p>
-            Lois Kater
-          </p>
-          <p>
-            <a
-              href="mailto:lois@katze.at?subject=Bewerbung%20als%20Cat%20%20lady"
-              class="email"
-            >
-              <img src="Mail.svg" alt="Brief" />
-              lois.kater@katze.at
-            </a>
-          </p>
-          <p><img src="Phone.svg" alt="Telefon" /> 06767/11111111</p>
-          <p><img src="Address.svg" alt="Haus" /> In der Katzengasse 1</p>
-          <p>4020 Linz</p>
-        </div>
-      </section>
-    </div>
-  </body>
-</head>
+            <p>
+              Lois Kater
+            </p>
+            <p>
+              <a
+                href="mailto:lois@katze.at?subject=Bewerbung%20als%20Cat%20%20lady"
+                class="email"
+              >
+                <img src="Mail.svg" alt="Brief" />
+                lois.kater@katze.at
+              </a>
+            </p>
+            <p><img src="Phone.svg" alt="Telefon" /> 06767/11111111</p>
+            <p><img src="Address.svg" alt="Haus" /> In der Katzengasse 1</p>
+            <p>4020 Linz</p>
+          </div>
+        </section>
+      </div>
+    </body>
+  </head>
+</html>
