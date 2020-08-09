@@ -17,6 +17,7 @@ TITLE
   <style>
     * {
       box-sizing: border-box;
+      color: #000000;
     }
     body {
       width: 100%;
@@ -111,7 +112,7 @@ TITLE
       font-family: inherit;
       height: 70px;
     }
-    /* Bei hover soll der Button einen grünen abgerundeten Rahmen, transparenten Hintergrund und grüne Schrift haben. */
+
     button:hover {
       border: 3px solid #808a00;
       background-color: transparent;
@@ -132,12 +133,7 @@ TITLE
       width: 300px;
       vertical-align: middle;
     }
-    /* .contactDetails {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-items: space-around;
-    } */
+
     .contactDetails p {
       margin: 0 auto;
       text-align: center;
@@ -149,13 +145,60 @@ TITLE
       text-decoration: none;
       color: inherit;
     }
+
+    /* --------------------------MOBILE VERSION---------------------------*/
+    @media (max-width: 900px) {
+      .headerDesktop {
+        display: none;
+      }
+      .headerMobile {
+        width: 100%;
+      }
+      .benefitsDesktop {
+        display: none;
+      }
+      .benefitsMobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        text-align: center;
+      }
+      .aboutUs {
+        display: flex;
+        flex-direction: column-reverse;
+
+        /* align-items: center;
+        justify-content: center; */
+      }
+      .aboutUs img {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
+        padding-left: 0;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    @media (min-width: 901px) {
+      .headerMobile {
+        display: none;
+      }
+      .benefitsMobile {
+        display: none;
+      }
+    }
   </style>
   <body>
     <div class="container">
       <img src="Header.jpg" class="headerDesktop" />
+      <img src="Header_mobile.jpg" class="headerMobile" />
       <div class="mitarbeiter">
         <h1>Mitarbeiter mit Leidenschaft</h1>
-        <p>und einem Herz für Tiere ganz besonders für Katzen</p>
+        <p>und einem Herz für Tiere, ganz besonders für Katzen</p>
       </div>
 
       <section class="jobDescription">
@@ -211,52 +254,108 @@ TITLE
         </div>
         <div class="benefits">
           <h2>Benefits</h2>
-          <img
-            src="Benefits/Aus-und-Weiterbildung.svg"
-            title="Aus- und Weiterbildung"
-            alt="akademischer Hut"
-          />
-          <img
-            src="Benefits/Flexible-Arbeitszeiten.svg"
-            title="Flexible Arbeitszeiten"
-            alt="Uhr"
-          />
-          <img
-            src="Benefits/Gesundheit-und-Fitness.svg"
-            title="Gesundheit und Fitness"
-            alt="Herz"
-          />
-          <img
-            src="Benefits/Jubilee_Awards.svg"
-            title="Jubilee Awards"
-            alt="Medaille"
-          />
-          <img src="Benefits/Kantine.svg" title="Kantine" alt="Besteck" />
-          <img
-            src="Benefits/Mitarbeiterevents.svg"
-            title="Mitarbeiterevents"
-            alt="Konfetti"
-          />
-          <img
-            src="Benefits/Mitarbeitervorteile.svg"
-            title="Mitarbeitervorteile"
-            alt="Prozent Zeichen"
-          />
-          <img
-            src="Benefits/Obstkorb-Erfrischung.svg"
-            title="Obstkorb-Erfrischung"
-            alt="Apfel und Wasserflasche"
-          />
-          <img
-            src="Benefits/Praemiensystem.svg"
-            title="Prämiensystem"
-            alr="Hand hält Münzen"
-          />
-          <img
-            src="Benefits/Umfassende-Einarbeitung.svg"
-            title="Umfassende Einarbeitung"
-            alt="Heft und Stift"
-          />
+          <div class="benefitsDesktop">
+            <img
+              src="Benefits/Aus-und-Weiterbildung.svg"
+              title="Aus- und Weiterbildung"
+              alt="akademischer Hut"
+            />
+            <img
+              src="Benefits/Flexible-Arbeitszeiten.svg"
+              title="Flexible Arbeitszeiten"
+              alt="Uhr"
+            />
+            <img
+              src="Benefits/Gesundheit-und-Fitness.svg"
+              title="Gesundheit und Fitness"
+              alt="Herz"
+            />
+            <img
+              src="Benefits/Jubilee_Awards.svg"
+              title="Jubilee Awards"
+              alt="Medaille"
+            />
+            <img src="Benefits/Kantine.svg" title="Kantine" alt="Besteck" />
+            <img
+              src="Benefits/Mitarbeiterevents.svg"
+              title="Mitarbeiterevents"
+              alt="Konfetti"
+            />
+            <img
+              src="Benefits/Mitarbeitervorteile.svg"
+              title="Mitarbeitervorteile"
+              alt="Prozent Zeichen"
+            />
+            <img
+              src="Benefits/Obstkorb-Erfrischung.svg"
+              title="Obstkorb-Erfrischung"
+              alt="Apfel und Wasserflasche"
+            />
+            <img
+              src="Benefits/Praemiensystem.svg"
+              title="Prämiensystem"
+              alr="Hand hält Münzen"
+            />
+            <img
+              src="Benefits/Umfassende-Einarbeitung.svg"
+              title="Umfassende Einarbeitung"
+              alt="Heft und Stift"
+            />
+          </div>
+          <div class="benefitsMobile">
+            <div class="singleBenefitMob">
+              <img
+                src="Benefits/Aus-und-Weiterbildung.svg"
+                alt="akademischer Hut"
+              />
+              <p>Aus- und Weiterbildung</p>
+            </div>
+            <div>
+              <img src="Benefits/Flexible-Arbeitszeiten.svg" alt="Uhr" />
+              <p>Flexible Arbeitszeiten</p>
+            </div>
+            <div>
+              <img src="Benefits/Gesundheit-und-Fitness.svg" alt="Herz" />
+              <p>Gesundheit und Fitness</p>
+            </div>
+            <div>
+              <img src="Benefits/Jubilee_Awards.svg" alt="Medaille" />
+              <p>Jubilee Awards</p>
+            </div>
+            <div>
+              <img src="Benefits/Kantine.svg" alt="Besteck" />
+              <p>Kantine</p>
+            </div>
+            <div>
+              <img src="Benefits/Mitarbeiterevents.svg" alt="Konfetti" />
+              <p>Mitarbeiterevents</p>
+            </div>
+            <div>
+              <img
+                src="Benefits/Mitarbeitervorteile.svg"
+                alt="Prozent Zeichen"
+              />
+              <p>Mitarbeitervorteile</p>
+            </div>
+            <div>
+              <img
+                src="Benefits/Obstkorb-Erfrischung.svg"
+                alt="Apfel und Wasserflasche"
+              />
+              <p>Obstkorb und Erfrischungen</p>
+            </div>
+            <div>
+              <img src="Benefits/Praemiensystem.svg" alr="Hand hält Münzen" />
+              <p>Prämiensystem</p>
+            </div>
+            <div>
+              <img
+                src="Benefits/Umfassende-Einarbeitung.svg"
+                alt="Heft und Stift"
+              />
+              <p>Umfassende Einarbeitung</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="aboutUs">
