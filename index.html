@@ -15,6 +15,9 @@ TITLE
   />
   <title>Mitarbeiter mit Leidenschaft gesucht</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       width: 100%;
       margin: 0;
@@ -27,9 +30,23 @@ TITLE
       width: 90%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
     .container > * {
       background-color: white;
+    }
+
+    .container > *:not(.headerDesktop) {
+      padding-left: 3rem;
+      font-size: 1.5rem;
+    }
+
+    .mitarbeiter,
+    .jobDescription,
+    .contact {
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
     }
     h1,
     h2 {
@@ -43,15 +60,23 @@ TITLE
     }
 
     .mitarbeiter,
-    .aboutUs,
     .contact {
       margin-top: 4rem;
       border-top: 7px solid black;
       border-bottom: 7px solid black;
     }
+    .jobDescription,
+    .aboutUs {
+      margin-top: 4rem;
+      border-left: 7px solid black;
+      border-right: 7px solid black;
+    }
 
     .mitarbeiter p {
-      font-size: 1.5rem;
+      font-size: 2rem;
+    }
+    .mitarbeiter h1 {
+      font-size: 50px;
     }
 
     .benefits img {
@@ -63,22 +88,49 @@ TITLE
       grid-template-columns: 2fr 1fr;
       gap: 2rem;
     }
+    .aboutUs div {
+      padding-bottom: 1.5rem;
+    }
     .aboutUs img {
       width: 300px;
       transform: scaleX(-1);
+      padding-top: 0;
+
+      margin-top: 0;
+      height: 100%;
+      margin-left: auto;
     }
 
+    button {
+      background-color: #808a00;
+      border-radius: 10px;
+      padding: 10px;
+      width: 200px;
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-family: inherit;
+      height: 70px;
+    }
+    /* Bei hover soll der Button einen grünen abgerundeten Rahmen, transparenten Hintergrund und grüne Schrift haben. */
+    button:hover {
+      border: 3px solid #808a00;
+      background-color: transparent;
+      color: #808a00;
+      transition: all 0.3s;
+    }
     .contact {
       display: flex;
       flex-direction: row;
-      width: 100%;
-      justify-content: space-evenly;
       align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
     }
 
     .contact > img {
       border-radius: 100%;
       width: 300px;
+      vertical-align: middle;
     }
     /* .contactDetails {
       display: flex;
@@ -86,11 +138,16 @@ TITLE
       align-content: center;
       justify-items: space-around;
     } */
-    .contactDetails ul {
-      list-style-type: none;
+    .contactDetails p {
+      margin: 0 auto;
+      text-align: center;
     }
     .contactDetails img {
       width: 15px;
+    }
+    .email {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
   <body>
@@ -156,21 +213,48 @@ TITLE
           <h2>Benefits</h2>
           <img
             src="Benefits/Aus-und-Weiterbildung.svg"
+            title="Aus- und Weiterbildung"
             alt="akademischer Hut"
           />
-          <img src="Benefits/Flexible-Arbeitszeiten.svg" alt="Uhr" />
-          <img src="Benefits/Gesundheit-und-Fitness.svg" alt="Herz" />
-          <img src="Benefits/Jubilee_Awards.svg" alt="Medaille" />
-          <img src="Benefits/Kantine.svg" alt="Besteck" />
-          <img src="Benefits/Mitarbeiterevents.svg" alt="Konfetti" />
-          <img src="Benefits/Mitarbeitervorteile.svg" alt="Prozent Zeichen" />
+          <img
+            src="Benefits/Flexible-Arbeitszeiten.svg"
+            title="Flexible Arbeitszeiten"
+            alt="Uhr"
+          />
+          <img
+            src="Benefits/Gesundheit-und-Fitness.svg"
+            title="Gesundheit und Fitness"
+            alt="Herz"
+          />
+          <img
+            src="Benefits/Jubilee_Awards.svg"
+            title="Jubilee Awards"
+            alt="Medaille"
+          />
+          <img src="Benefits/Kantine.svg" title="Kantine" alt="Besteck" />
+          <img
+            src="Benefits/Mitarbeiterevents.svg"
+            title="Mitarbeiterevents"
+            alt="Konfetti"
+          />
+          <img
+            src="Benefits/Mitarbeitervorteile.svg"
+            title="Mitarbeitervorteile"
+            alt="Prozent Zeichen"
+          />
           <img
             src="Benefits/Obstkorb-Erfrischung.svg"
+            title="Obstkorb-Erfrischung"
             alt="Apfel und Wasserflasche"
           />
-          <img src="Benefits/Praemiensystem.svg" alr="Hand hält Münzen" />
+          <img
+            src="Benefits/Praemiensystem.svg"
+            title="Prämiensystem"
+            alr="Hand hält Münzen"
+          />
           <img
             src="Benefits/Umfassende-Einarbeitung.svg"
+            title="Umfassende Einarbeitung"
             alt="Heft und Stift"
           />
         </div>
@@ -197,9 +281,17 @@ TITLE
           <p>
             Lois Kater
           </p>
-          <p><img src="Mail.svg" alt="Brief Icon" /> lois.kater@katze.at</p>
-          <p><img src="Phone.svg" alt="Telefon Icon" />06767/11111111</p>
-          <p><img src="Address.svg" alt="Haus" />In der Katzengasse 1</p>
+          <p>
+            <a
+              href="mailto:lois@katze.at?subject=Bewerbung%20als%20Cat%20%20lady"
+              class="email"
+            >
+              <img src="Mail.svg" alt="Brief" />
+              lois.kater@katze.at
+            </a>
+          </p>
+          <p><img src="Phone.svg" alt="Telefon" /> 06767/11111111</p>
+          <p><img src="Address.svg" alt="Haus" /> In der Katzengasse 1</p>
           <p>4020 Linz</p>
         </div>
       </section>
